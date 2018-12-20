@@ -6,7 +6,7 @@ void two(void);
 
 int main(void)
 {
-    int n ,i,fibonacci;
+    unsigned long long int n ,i,fibonacci;
     n = 0;
     fibonacci = 1;
     printf("%d\n%d\n",n,fibonacci);
@@ -14,8 +14,9 @@ int main(void)
     {
         fibonacci = n + fibonacci;
         n = fibonacci - n;
-        printf("%d\n",fibonacci);
+        printf("%llu\n",fibonacci);
     }
+    /*
     jolly();
     jolly();
     printf("\n");
@@ -26,6 +27,7 @@ int main(void)
     printf("starting now:\n");
     one_three();
     printf("done!");
+    */
 }
 
 void jolly(void)
